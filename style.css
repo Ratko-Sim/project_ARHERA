@@ -1,0 +1,108 @@
+/* Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page Section 2 - Ratko */
+.ratko__sec-01 {
+  width: 90%;
+  margin: auto;
+}
+
+.sec-01__title {
+  margin-top: 5rem;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* navigation links */
+.sec-01__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 2rem;
+}
+
+.list__link {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.list__link:hover {
+  color: rgb(163, 219, 89);
+  text-decoration: underline;
+}
+
+/* Product cards */
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1.3rem;
+  justify-content: center;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.grid-card {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 0.3rem;
+  background-color: rgb(248, 248, 248);
+  border-radius: 3px;
+}
+
+.grid-card__header {
+  background-color: white;
+  display: block;
+  margin: auto;
+  padding: 3rem;
+  width: 99%;
+}
+
+.grid-card__image {
+  width: 100%;
+  max-width: 300px;
+  object-fit: cover;
+}
+
+.grid-card__body {
+  margin: 1rem auto;
+}
+
+.grid-card__title {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.grid-card__price {
+  display: block;
+  text-align: center;
+  color: rgb(163, 219, 89);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.grid-card__price::before {
+  content: "€";
+  font-size: 0.9rem;
+  vertical-align: top;
+  line-height: 1.4rem;
+}
+
+.grid-card__price::after {
+  content: "/KG";
+  font-size: 1.2rem;
+  color: rgb(187, 187, 187);
+}
