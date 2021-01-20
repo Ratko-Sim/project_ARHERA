@@ -159,6 +159,10 @@
     grid-column: 1/3;
     grid-row: 1/3;
   }
+
+  .col-01-row-01__image {
+    margin: 2rem 5rem;
+  }
 }
 
 @media screen and (min-width: 1231px) {
@@ -172,7 +176,6 @@
   object-fit: cover;
   width: 100%;
   max-width: 600px;
-  margin: 2rem 5rem;
 }
 
 .col-03-row-01__title {
