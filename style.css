@@ -3,7 +3,103 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* outline: 1px solid red; */
 }
+
+body {
+  font-family: 'Montserrat', sans-serif;;
+}
+
+
+/* HERO-PAGE - Arty */
+
+.hero-image {
+  background-image: url(./images/Hero-image.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.header-bar {
+  display: grid;
+  grid-template-columns: 20vw 1fr 20vw;
+  height: 50px;
+  border-bottom: 2px groove lightgray;
+}
+
+.nav-bar {
+  display: grid;
+  grid-template-columns: 22vw 1fr 20vw;
+  height: 100px;
+}
+
+.nav-bar__logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 60px;
+  text-align: right;
+  line-height: 100px;
+  padding-left: 1rem;
+  color:darkgreen;
+  text-shadow: 2px 2px 4px white;
+}
+
+.nav-bar__links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-bar__links li {
+  line-height: 100px;
+  padding: 0 10px;
+  list-style: none; 
+}
+.nav-bar__links a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: darkgreen;
+  padding: 10px; 
+  text-shadow: 0px 1px 0px #000000;
+}
+
+.hero-center__container {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+height: 55vh;
+}
+
+.hero-center > * {
+  margin-bottom: 0.5rem; 
+}
+
+.hero-center__logo {
+  background-size: contain;
+  height: 5rem;
+}
+
+.hero-center__headline2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 5rem;
+  color: white;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+.hero-center__button {
+  margin-top: 1.5rem;
+  padding: 10px 50px; 
+  border-radius: 25px;
+  background-color: #82bd44;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+
 
 /* Page Section 1 - Ratko */
 .ratko__sec-01 {
@@ -225,4 +321,3 @@ Please tell to Ratko
 How you are proud of him.
 This makes his day 
 And he is happy. Thanks */
-
