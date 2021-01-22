@@ -177,6 +177,7 @@ height: 55vh;
   transition: .4 ease;
   background-color: rgb(163, 219, 89);
   padding: 0;
+  transform: scale(1.04);
 }
 
 .grid-card__header {
@@ -357,7 +358,7 @@ height: 55vh;
 .grid-02__image:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   transition: .7s ease;
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
 .sec-02__col-03-row-01 {
