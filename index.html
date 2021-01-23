@@ -19,15 +19,40 @@
 
   <header class="hero-image">
 
+    <!-- Header Top-bar including Order, Clock, Account, Shopping-cart -->
+
     <div class="header-bar">
-      <div class="header-bar__left-box"></div>
-      <div class="header-bar__center-box"></div>
-      <div class="header-bar__right-box"></div>
+
+      <div class="header-bar__sections header-bar--left">
+        <div class="header-bar__order-online">
+          <i class="fas fa-circle"></i>
+          <a href="#">Order Online</a>
+        </div>
+      </div>
+
+      <div class="header-bar__sections header-bar--center">
+        <div class="header-bar__time">
+          <i class="far fa-clock"></i>
+          <span>07:30am - 11:00pm</span>
+        </div>
+        <div class="header-bar__my-account">
+          <i class="fas fa-user"></i>
+          <a href="#">My Account</a>
+        </div>
+      </div>
+
+      <div class="header-bar__sections header-bar--right">
+        <div class="header-bar__shopping-cart">
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </div>
     </div>
+
+    <!-- Navigation bar including Javascript crap -->
 
     <nav class="nav-bar">
       <h3 class="nav-bar__logo">Gamba</h3>
-      <ul class="nav-bar__links">
+      <ul id="nav-bar__mylinks">
         <li><a href="#">HOME</a></li>
         <li><a href="#">ABOUT</a></li>
         <li><a href="#">SHOP</a></li>
@@ -35,24 +60,45 @@
         <li><a href="#">PAGES</a></li>
         <li><a href="#">CONTACT</a></li>
       </ul>
-      <div class="nav-bar__search"></div>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <div class="nav-bar__search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search"><button type="submit"><i
+              class="fa fa-search"></i></button>
+        </form>
+      </div>
+
     </nav>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("nav-bar__mylinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+    <!-- Hero-image center -->
 
     <div class="hero-center__container">
       <div class="hero-center">
         <img class="hero-center__logo" src="./images/Leaf_logo.png" alt="Leaf_logo">
-        <h3 class="hero-center__headline1">HEALTHY FOOD</h3>
-        <h1 class="hero-center__headline2">Organic</h1>
+        <h3 class="hero-center__healthy-food">HEALTHY FOOD</h3>
+        <h1 class="hero-center__organic">Organic</h1>
         <p class="hero-center__caption">GOOD FOR NATURE, GOOD FOR YOU</p>
         <button class="hero-center__button">SHOP NOW</button>
       </div>
     </div>
 
   </header>
-
-  <main>
-
-  <header></header>
+  
   <main>
     <section class=""></section>
 
