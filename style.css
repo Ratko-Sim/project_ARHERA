@@ -125,12 +125,13 @@ height: 55vh;
   list-style-type: none;
 }
 
-@media screen and (min-width: 928px) {
+@media screen and (min-width: 786px) {
   .sec-01__list {
     flex-direction: row;
     justify-content: space-around;
-    width: 50%;
+    width: 60%;
     margin:2rem auto;
+    max-width: 1000px;
   }
 }
 
@@ -154,11 +155,11 @@ height: 55vh;
 
 .sec-01__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 400px);
+  grid-template-columns: repeat(auto-fill, 450px);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: .5rem;
   justify-content: center;
-  max-width: 1500px;
+  max-width: 1370px;
   margin: auto;
 }
 
@@ -167,8 +168,9 @@ height: 55vh;
   padding: 0.4rem;
   background-color: rgb(248, 248, 248);
   border-radius: 3px;
-  width: 350px;
-  height: 450px; 
+  width: 85vw;
+  max-width: 400px;
+  height: 430px; 
   transition: .7s ease;
 }
 
@@ -182,13 +184,13 @@ height: 55vh;
 
 .grid-card__header {
   background-color: white;
-  height: 350px;
+  height: 330px;
   padding: 3rem;
   transition: .5s ease;
 }
 
 .grid-card:hover > .grid-card__header {
-  height: 300px;
+  height: 280px;
   transition: .5s ease;
 }
 
@@ -200,7 +202,8 @@ height: 55vh;
 
 .grid-card:hover > .grid-card__body > .grid-card__price::after {
   color:  rgb(241, 241, 241);
-  transition: .5s ease;
+  transition: .5
+  s ease;
 
 }
 
