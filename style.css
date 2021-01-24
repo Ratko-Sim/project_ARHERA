@@ -3,7 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 body {
@@ -216,13 +216,21 @@ body {
 .hero-center__button {
   margin-top: 1.5rem;
   padding: 12px 50px;
-  border-radius: 25px;
+  border-radius: 2rem;
   background-color: #82bd44;
   color: white;
   font-weight: bold;
   border: none;
+  outline: none;
+  cursor: pointer;
+  transition: .1s ease-in-out;
+  text-transform: capitalize;
 }
 
+.hero-center__button:hover {
+  background: #a3dd64;
+  transition: .1s ease;
+}
 
 /* Page Section 1 - Ratko */
 
@@ -310,7 +318,6 @@ body {
   height: 330px;
   padding: 3rem;
   transition: .5s ease;
-
 }
 
 .grid-card:hover>.grid-card__header {
