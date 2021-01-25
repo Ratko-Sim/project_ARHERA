@@ -3,7 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 body {
@@ -177,7 +177,6 @@ body {
   }
 }
 
-
 /* Hero center icon,caption..etc */
 
 .hero-center__container {
@@ -209,7 +208,6 @@ body {
   font-size: 5rem;
   color: white;
   font-weight: 500;
-  /* text-shadow: 2px 2px 4px #000000; */
 }
 
 .hero-center__button {
@@ -230,6 +228,90 @@ body {
   background: #a3dd64;
   transition: .1s ease;
 }
+
+
+/* Page Section - Welcome to Gamba */
+
+.welcome-to-Gamba__title {
+  margin: 3rem auto;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.welcome-to-gamba__section {
+  width: 90%;
+  margin: auto;
+}
+
+.welcome-box {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, 70vw);
+  grid-template-rows: repeat(2, 400px); */
+}
+
+.welcome-boxes {
+  text-align: center;
+  border: 1px solid black; 
+  list-style: none;
+  /* max-width: 350px; */
+  margin: 0 auto 3rem auto; 
+}
+
+.welcome-boxes > * {
+  margin-bottom: 0.8rem;
+}
+
+.welcome-boxes .image-box {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.welcome-boxes img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+}
+
+.welcome-boxes h4 {
+  font-size: 1.2rem;
+}
+
+.welcome-boxes p {
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  width: 80%;
+  margin: 0.8rem auto; 
+}
+
+.welcome-box__center-image {
+  background-image: url(./images/spinach.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+@media only screen and (min-width: 900px) {
+
+  .welcome-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    grid-template-rows: repeat(2, 330px);
+  }
+
+  .welcome-box__center-image {
+    grid-column: 1/3;
+    height: 100%;
+    width: 100%;
+  }
+
+}
+
 
 /* Page Section 1 - Ratko */
 
