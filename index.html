@@ -22,7 +22,6 @@
     <!-- Header Top-bar including Order, Clock, Account, Shopping-cart -->
 
     <div class="header-bar">
-
       <div class="header-bar__sections header-bar--left">
         <div class="header-bar__order-online">
           <i class="fas fa-circle"></i>
@@ -48,41 +47,23 @@
       </div>
     </div>
 
-    <!-- Navigation bar including Javascript crap -->
+<!-- Navigation bar -->
 
-    <nav class="nav-bar">
-      <h3 class="nav-bar__logo">Gamba</h3>
-      <ul id="nav-bar__mylinks">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#shop">SHOP</a></li>
-        <li><a href="#blog">BLOG</a></li>
-        <li><a href="#pages">PAGES</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-
-      <div class="nav-bar__search-container">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search.." name="search"><button type="submit"><i
-              class="fa fa-search"></i></button>
-        </form>
-      </div>
-    </nav>
-
-    <script>
-      function myFunction() {
-        var x = document.getElementById("nav-bar__mylinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-    </script>
+<nav class="nav">
+  <h3 class="nav__logo">Gamba</h3>
+  <div class="nav__menu">
+    <label for="menu__toggle" class="fas fa-bars"></label>
+    <input type="checkbox" id="menu__toggle">
+    <ul class="menu__list">
+      <li><a href="#home">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#shop">shop</a></li>
+      <li><a href="#blog">blog</a></li>
+      <li><a href="#pages">pages</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </div>
+</nav>
 
     <!-- Hero-image center -->
 
